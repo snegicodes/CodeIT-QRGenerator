@@ -19,6 +19,7 @@ const onSubmitHandler = (e) => {
       generateQRCode(url, size);
       setTimeout(() => {
         const saveUrl = qr.querySelector("img").src;
+        qr.querySelector("img").style.border = "1px solid white";
         createSaveBtn(saveUrl);
       }, 50);
     }, 1000);

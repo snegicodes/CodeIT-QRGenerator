@@ -22,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="app.js" defer></script>
     <title>QR Code Generator 📑</title>
   </head>
   <body>
@@ -53,6 +54,7 @@
               placeholder="Enter a URL"
               type="url"
               class="w-full border-2 border-white-200 rounded p-3 text-black mr-2 mb-5 focus:outline-none"
+              required
             />
             <select
               id="size"
@@ -108,6 +110,5 @@
         <div id="qrcode" class="m-auto"></div>
       </div>
     </main>
-    <script src="app.js"></script>
   </body>
 </html>
